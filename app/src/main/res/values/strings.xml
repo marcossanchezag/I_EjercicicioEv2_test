@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Ejercicio9AS</string>
+    <string name="bienvenida">Bienvenido a la app de preguntas tipo test del imperio romano</string>
+    <string name="nombrehint">introduce tu nombre</string>
+    <string name="Empezar">Empezar</string>
+    <string name="pregunta1">¿Cómo se llama este monumento?</string>
+    <string name="respuesta1">Santiago Bernabeu</string>
+    <string name="respuesta2">Coliseo</string>
+    <string name="respuesta3">Vaticano</string>
+    <string name="pregunta2">¿Cuál fue la capital del Imperio Romano?</string>
+    <string name="respuesta21">Atenas</string>
+    <string name="respuesta22">Roma</string>
+    <string name="respuesta23">Alejandría</string>
+    <string name="pregunta3">¿Qué emperador romano construyó el Coliseo?</string>
+    <string name="respuesta31">Augusto</string>
+    <string name="respuesta32">Nerón</string>
+    <string name="respuesta33">Vespasiano</string>
+    <string name="pregunta4">¿Quién fue el primer emperador romano?</string>
+    <string name="respuesta41">Julio César</string>
+    <string name="respuesta42">Augusto</string>
+    <string name="respuesta43">Nerón</string>
+    <string name="pregunta5">¿Cuál era el idioma principal hablado en el Imperio Romano?</string>
+    <string name="respuesta51">Griego</string>
+    <string name="respuesta52">Latín</string>
+    <string name="respuesta53">Egipcio</string>
+    <string name="atras">Atrás</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="animo1">Bien hecho %1$s! , sigue así.</string>
+    <string name="animo2">Deberías estudiar más %1$s!.</string>
+    <string name="responde">Selecciona la respuesta correcta:</string>
+
+
+
+</resources>
