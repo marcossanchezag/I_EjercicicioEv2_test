@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 public class Preguntas1 extends AppCompatActivity {
@@ -17,12 +18,19 @@ public class Preguntas1 extends AppCompatActivity {
 
     private ImageButton atras;
     private ImageButton continuar;
+    private ProgressBar progressBar1;
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_preguntas1);
+        progressBar1 = findViewById(R.id.progressBar);
+
+        progressBar1.setProgress(20);  // Establece el progreso al 20%
+
+
 
 
         Intent intent = getIntent();

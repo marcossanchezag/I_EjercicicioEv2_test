@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 public class preguntas3 extends AppCompatActivity {
@@ -15,6 +16,9 @@ public class preguntas3 extends AppCompatActivity {
 
     private ImageButton atras;
     private ImageButton continuar;
+
+    private ProgressBar progressBar3;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +31,10 @@ public class preguntas3 extends AppCompatActivity {
 
         atras = findViewById(R.id.atras51);
         continuar = findViewById(R.id.continuar51);
+
+        progressBar3 = findViewById(R.id.progressBar3);
+
+        progressBar3.setProgress(60);  // Establece el progreso al 60%
 
         TextView textView = findViewById(R.id.animo3);
 

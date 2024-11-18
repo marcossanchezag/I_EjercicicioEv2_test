@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -19,6 +20,8 @@ public class preguntas21 extends AppCompatActivity {
     private Button boton23;
     private ImageButton atras;
     private ImageButton continuar;
+    private ProgressBar progressBar2;
+
 
 
     @Override
@@ -39,6 +42,9 @@ public class preguntas21 extends AppCompatActivity {
 
         atras = findViewById(R.id.atras51);
         continuar = findViewById(R.id.continuar51);
+        progressBar2 = findViewById(R.id.progressBar2);
+
+        progressBar2.setProgress(40);  // Establece el progreso al 40%
 
         TextView textView = findViewById(R.id.animo2);
 

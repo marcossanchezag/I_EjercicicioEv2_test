@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 public class preguntas4 extends AppCompatActivity {
@@ -15,6 +16,9 @@ public class preguntas4 extends AppCompatActivity {
     private Button boton43;
     private ImageButton atras;
     private ImageButton continuar;
+
+    private ProgressBar progressBar4;
+
 
 
     @Override
@@ -28,6 +32,10 @@ public class preguntas4 extends AppCompatActivity {
 
         atras = findViewById(R.id.atras51);
         continuar = findViewById(R.id.continuar51);
+
+        progressBar4 = findViewById(R.id.progressBar4);
+
+        progressBar4.setProgress(80);  // Establece el progreso al 80%
 
         TextView textView = findViewById(R.id.animo4);
 
