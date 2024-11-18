@@ -1,15 +1,48 @@
+# Archivos de configuración de Android Studio
+.idea/
 *.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+*.ipr
+*.iws
+
+# Archivos generados automáticamente por Gradle
+.gradle/
+build/
+*/build/
+
+# Archivos de configuración local del SDK
 local.properties
+
+# Archivos específicos del sistema operativo
+.DS_Store       # macOS
+Thumbs.db       # Windows
+
+# Logs y reportes
+*.log
+*.crash
+*.stacktrace
+
+# Capturas generadas por Android Studio
+captures/
+
+# Archivos de compilación nativa
+.externalNativeBuild/
+.cxx/
+
+# Llaves de firma y otros archivos sensibles
+*.jks
+*.keystore
+
+# Archivos temporales
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# Archivos de Maven locales y configuraciones del wrapper
+.mvn/
+.gradle/wrapper/
+
+# Archivos relacionados con Git
+.git/
+
+# Cualquier otro archivo o carpeta específica de tu entorno
