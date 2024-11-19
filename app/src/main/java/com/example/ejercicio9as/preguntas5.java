@@ -53,7 +53,7 @@ public class preguntas5 extends AppCompatActivity {
         continuar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                obtener.atras_continuar(preguntas5.this, PantallaFinal1.class);
+                obtener.atras_continuar(preguntas5.this, pantallaFinal2.class);
             }
         });
 

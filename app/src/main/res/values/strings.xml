@@ -29,6 +29,10 @@
     <string name="animo2">Deberías estudiar más %1$s!.</string>
     <string name="responde">Selecciona la respuesta correcta:</string>
 
+    <string name="aprobado10">Excelente trabajo %1$s!, has aprobado el test con ningún error, has sacado un: </string>
+    <string name="aprobado">Buen trabajo %1$s!, has aprobado el test, has sacado un: </string>
+    <string name="suspendido">Oh Oh que pena %1$s!, has suspendido el test con una nota de: </string>
+
 
 
 </resources>

@@ -3,6 +3,7 @@ package com.example.ejercicio9as;
 import android.content.Context;
 import android.content.Intent;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -87,6 +88,37 @@ public class obtener {
 
 
     }
+
+    // Método para calcular la nota final y mostrar el resultado
+    public static  void mostrarResultado(TextView textView, Context context, ImageView resultadoImagen) {
+        // Calcula la nota final basada en el ArrayList respuestas
+        int notaFinal = 0;
+        for (Boolean respuesta : obtener.respuestas) {
+            if (respuesta) {
+                notaFinal++;
+            }
+        }
+
+        String mensajeAprobado = context.getString(R.string.aprobado10, nombre); // Combina el string con la variable
+        String mensajeAprobado2 = context.getString(R.string.aprobado, nombre); // Combina el string con la variable
+        String mensajeSuspenso = context.getString(R.string.suspendido, nombre); // Combina el string con la variable
+
+        // Muestra el mensaje basado en la nota final
+        if (notaFinal == 5) {
+            textView.setText(mensajeAprobado + notaFinal * 2);
+            resultadoImagen.setImageResource(R.drawable.enhorabuena); // Imagen de excelencia
+
+        } else if (notaFinal >= 4 && notaFinal>=3) {
+            textView.setText(mensajeAprobado2 + notaFinal * 2);
+            resultadoImagen.setImageResource(R.drawable.enhorabuena); // Imagen de excelencia
+
+        } else {
+            textView.setText(mensajeSuspenso+ notaFinal * 2);
+            resultadoImagen.setImageResource(R.drawable.lo_sentimos); // Imagen de excelencia
+
+        }
+    }
+
 
 
 
