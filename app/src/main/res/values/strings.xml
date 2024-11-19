@@ -28,10 +28,13 @@
     <string name="animo1">Bien hecho %1$s! , sigue así.</string>
     <string name="animo2">Deberías estudiar más %1$s!.</string>
     <string name="responde">Selecciona la respuesta correcta:</string>
-
     <string name="aprobado10">Excelente trabajo %1$s!, has aprobado el test con ningún error, has sacado un: </string>
     <string name="aprobado">Buen trabajo %1$s!, has aprobado el test, has sacado un: </string>
     <string name="suspendido">Oh Oh que pena %1$s!, has suspendido el test con una nota de: </string>
+    <string name="podio">Mejores puntuaciones:</string>
+    <string name="puntuacion1">1-%1$s!</string>
+    <string name="puntuacion2">2-%1$s!</string>
+    <string name="puntuacion3">3-%1$s!:</string>
 
 
 
