@@ -27,16 +27,6 @@ public class obtener {
 
 
 
-//________________________________________________________________________________
-//obtener nombre
-//private static int contadorPagina =1;
-//
-//    public static int setNumPagina(int n) {
-//        contadorPagina += n;
-//        return contadorPagina;
-//    }
-
-
 
 //________________________________________________________________________________
 
@@ -118,6 +108,18 @@ public class obtener {
 
         }
     }
+
+    public static int NotaFinal() {
+        // Calcula la nota final basada en el ArrayList respuestas
+        int notaFinal = 0;
+        for (Boolean respuesta : obtener.respuestas) {
+            if (respuesta) {
+                notaFinal++;
+            }
+        }
+        return notaFinal * 2; // Devuelve la puntuación final
+    }
+
 
 
 
