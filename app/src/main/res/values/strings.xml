@@ -23,8 +23,8 @@
     <string name="respuesta51">Griego</string>
     <string name="respuesta52">Latín</string>
     <string name="respuesta53">Egipcio</string>
-    <string name="atras">Atrás</string>
-    <string name="siguiente">Siguiente</string>
+    <string name="atras">back</string>
+    <string name="siguiente">next</string>
     <string name="animo1">Bien hecho %1$s! , sigue así.</string>
     <string name="animo2">Deberías estudiar más %1$s!.</string>
     <string name="responde">Selecciona la respuesta correcta:</string>
@@ -35,6 +35,8 @@
     <string name="puntuacion1">1-%1$s!</string>
     <string name="puntuacion2">2-%1$s!</string>
     <string name="puntuacion3">3-%1$s!:</string>
+    <string name="volver">volver a inicio</string>
+
 
 
 

@@ -1,4 +1,4 @@
-package com.example.ejercicio10;
+package com.example.ejercicio9as;
 
 
 
@@ -56,23 +56,21 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 
     //Método para comprobar si un profesor esta en la tabla
-    public  int ObtenerMejorPuntuacion(String nombre) {
+    public int ObtenerMejorPuntuacion(String nombre) {
         SQLiteDatabase db = this.getReadableDatabase();
-        String query = "SELECT puntuacion FROM Jugadores WHERE nombre = ? AND apellido = ?";
+        String query = "SELECT puntuacion FROM Jugadores WHERE nombre = ?";
         Cursor cursor = db.rawQuery(query, new String[]{nombre});
 
-        if(cursor.moveToFirst()){
-            int mejorpuntuacion = cursor.getInt(0);
-            cursor.close();
-            db.close();
-            return mejorpuntuacion;
-        }else{
-            cursor.close();
-            db.close();
-            return 0;
+        int mejorpuntuacion = 0; // Valor por defecto
+        if (cursor.moveToFirst()) {
+            mejorpuntuacion = cursor.getInt(0);
         }
 
+        cursor.close();
+        db.close();
+        return mejorpuntuacion;
     }
+
 
 
 

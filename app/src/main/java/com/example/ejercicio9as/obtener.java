@@ -98,7 +98,7 @@ public class obtener {
             textView.setText(mensajeAprobado + notaFinal * 2);
             resultadoImagen.setImageResource(R.drawable.enhorabuena); // Imagen de excelencia
 
-        } else if (notaFinal >= 4 && notaFinal>=3) {
+        } else if (notaFinal <= 4 && notaFinal>=3) {
             textView.setText(mensajeAprobado2 + notaFinal * 2);
             resultadoImagen.setImageResource(R.drawable.enhorabuena); // Imagen de excelencia
 
@@ -107,6 +107,8 @@ public class obtener {
             resultadoImagen.setImageResource(R.drawable.lo_sentimos); // Imagen de excelencia
 
         }
+        obtener.respuestas.clear(); // Vacia la lista de respuestas
+
     }
 
     public static int NotaFinal() {

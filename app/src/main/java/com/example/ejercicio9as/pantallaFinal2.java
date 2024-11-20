@@ -1,22 +1,20 @@
 package com.example.ejercicio9as;
 
-import android.content.Context;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
-
-import com.example.ejercicio10.DatabaseHelper;
 
 public class pantallaFinal2 extends AppCompatActivity {
 
     private ImageView resultadoImagen;
-    private com.example.ejercicio10.DatabaseHelper dbHelper;
+    private com.example.ejercicio9as.DatabaseHelper dbHelper;
+
+    private Button botonVolver;
 
 
     private TextView textoFinal;
@@ -29,15 +27,11 @@ public class pantallaFinal2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_pantalla_final2);
-//        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-//            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-//            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-//            return insets;
-//        });
+
 
         resultadoImagen = findViewById(R.id.resultadoImagen);
         textoGanador = findViewById(R.id.textView14);
-
+        botonVolver = findViewById(R.id.botonVolver);
         textoFinal = findViewById(R.id.textView19);
         obtener.mostrarResultado(textoFinal, pantallaFinal2.this,resultadoImagen);
 
@@ -51,8 +45,15 @@ public class pantallaFinal2 extends AppCompatActivity {
             textoGanador.setText("¡Nuevo récord de " + obtener.getNombre().toString()+" !  Puntuación anterior: " + mejorPuntuacion);
             dbHelper.insertarJugadorEjemplo(obtener.getNombre().toString(), obtener.NotaFinal());
         } else {
-            textoGanador.setText("Mejor puntuación anterior: " + mejorPuntuacion);
+            textoGanador.setText("Mejor puntuación anterior: de " + obtener.getNombre().toString() + ": " + mejorPuntuacion);
         }
+
+        botonVolver.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                obtener.atras_continuar(pantallaFinal2.this, MainActivity.class);
+            }
+        });
 
 
     }
