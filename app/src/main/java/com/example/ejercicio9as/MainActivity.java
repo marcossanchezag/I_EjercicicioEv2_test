@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import es.dmoral.toasty.Toasty;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(textoNombre.getText().toString().isEmpty()){
                     textoNombre.setHintTextColor(Color.RED);
+                    Toasty.error(MainActivity.this, "¡Debes introducir un nombre!").show();
                 }else{
 
 

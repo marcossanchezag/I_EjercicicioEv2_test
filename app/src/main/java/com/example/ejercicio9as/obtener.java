@@ -107,7 +107,6 @@ public class obtener {
             resultadoImagen.setImageResource(R.drawable.lo_sentimos); // Imagen de excelencia
 
         }
-        obtener.respuestas.clear(); // Vacia la lista de respuestas
 
     }
 
